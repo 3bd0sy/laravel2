@@ -3,7 +3,7 @@
 @section('content')
     <div class="continer m-3">
         <div class="d-flex m-5">
-            <h6>category / edit/ {{ $cat->name }} </h6>
+            <h6 class="fs-1">categories / edit/ {{ $cat->name }} </h6>
             <a href="{{ route("admin.cats.index") }}" class="btn btn-sm btn-primary">Back</a>
         </div>
         <form class="row g-3" method="POST" action="{{ route('admin.cats.update') }}">

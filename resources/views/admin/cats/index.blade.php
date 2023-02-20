@@ -3,7 +3,7 @@
 @section('content')
     <div class="continer m-3">
         <div class="d-flex m-5">
-            <h6 >category</h6>
+            <h6 class="fs-1">categories</h6>
             <a class="btn btn-sm btn-primary mx-5" href="{{ route("admin.cats.create") }}">add new</a>
         </div>
         <table class="table">

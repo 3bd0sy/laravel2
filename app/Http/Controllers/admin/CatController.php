@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class CatController extends Controller
 {
+
+    public function show($id)
+    {
+        return Cat::find($id);
+    }
     public function index()
     {
         $data["cats"] = Cat::select("id", "name")->get();
@@ -43,9 +48,8 @@ class CatController extends Controller
     }
     public function delete($id)
     {
-    Cat::findOrFail($id)->delete();
+        Cat::findOrFail($id)->delete();
 
         return  back();
     }
-
 }
